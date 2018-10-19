@@ -31,17 +31,19 @@
             this.Nev_Label = new System.Windows.Forms.Label();
             this.Szul_Cim_Label = new System.Windows.Forms.Label();
             this.Nem_Label = new System.Windows.Forms.Label();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.Ferfi_RadioButton = new System.Windows.Forms.RadioButton();
+            this.No_RadioButton = new System.Windows.Forms.RadioButton();
+            this.Szul_Cim_TextBox = new System.Windows.Forms.TextBox();
+            this.Nev_TextBox = new System.Windows.Forms.TextBox();
             this.Kedvenc_Hobbi_Label = new System.Windows.Forms.Label();
             this.Uj_Hobbi_Label = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.Uj_Hobbi_TextBox = new System.Windows.Forms.TextBox();
             this.Hozzaad_Button = new System.Windows.Forms.Button();
             this.Betolt_Button = new System.Windows.Forms.Button();
             this.Ment_Button = new System.Windows.Forms.Button();
+            this.saveFileDialog = new System.Windows.Forms.SaveFileDialog();
+            this.openFileDialog = new System.Windows.Forms.OpenFileDialog();
+            this.Hobbik_ListBox = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
             // Nev_Label
@@ -71,53 +73,41 @@
             this.Nem_Label.TabIndex = 2;
             this.Nem_Label.Text = "Nem:";
             // 
-            // radioButton1
+            // Ferfi_RadioButton
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(94, 74);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(31, 17);
-            this.radioButton1.TabIndex = 3;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "F";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.Ferfi_RadioButton.AutoSize = true;
+            this.Ferfi_RadioButton.Location = new System.Drawing.Point(94, 74);
+            this.Ferfi_RadioButton.Name = "Ferfi_RadioButton";
+            this.Ferfi_RadioButton.Size = new System.Drawing.Size(31, 17);
+            this.Ferfi_RadioButton.TabIndex = 3;
+            this.Ferfi_RadioButton.TabStop = true;
+            this.Ferfi_RadioButton.Text = "F";
+            this.Ferfi_RadioButton.UseVisualStyleBackColor = true;
             // 
-            // radioButton2
+            // No_RadioButton
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(161, 74);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(33, 17);
-            this.radioButton2.TabIndex = 4;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "N";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.No_RadioButton.AutoSize = true;
+            this.No_RadioButton.Location = new System.Drawing.Point(161, 74);
+            this.No_RadioButton.Name = "No_RadioButton";
+            this.No_RadioButton.Size = new System.Drawing.Size(33, 17);
+            this.No_RadioButton.TabIndex = 4;
+            this.No_RadioButton.TabStop = true;
+            this.No_RadioButton.Text = "N";
+            this.No_RadioButton.UseVisualStyleBackColor = true;
             // 
-            // textBox1
+            // Szul_Cim_TextBox
             // 
-            this.textBox1.Location = new System.Drawing.Point(94, 38);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 5;
+            this.Szul_Cim_TextBox.Location = new System.Drawing.Point(94, 38);
+            this.Szul_Cim_TextBox.Name = "Szul_Cim_TextBox";
+            this.Szul_Cim_TextBox.Size = new System.Drawing.Size(100, 20);
+            this.Szul_Cim_TextBox.TabIndex = 5;
             // 
-            // textBox2
+            // Nev_TextBox
             // 
-            this.textBox2.Location = new System.Drawing.Point(94, 10);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 6;
-            // 
-            // listBox1
-            // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.Items.AddRange(new object[] {
-            "Uszás",
-            "Horgászat",
-            "Futás"});
-            this.listBox1.Location = new System.Drawing.Point(200, 39);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(120, 95);
-            this.listBox1.TabIndex = 7;
+            this.Nev_TextBox.Location = new System.Drawing.Point(94, 10);
+            this.Nev_TextBox.Name = "Nev_TextBox";
+            this.Nev_TextBox.Size = new System.Drawing.Size(100, 20);
+            this.Nev_TextBox.TabIndex = 6;
             // 
             // Kedvenc_Hobbi_Label
             // 
@@ -137,12 +127,12 @@
             this.Uj_Hobbi_Label.TabIndex = 9;
             this.Uj_Hobbi_Label.Text = "Új hobbi:";
             // 
-            // textBox3
+            // Uj_Hobbi_TextBox
             // 
-            this.textBox3.Location = new System.Drawing.Point(199, 140);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(120, 20);
-            this.textBox3.TabIndex = 10;
+            this.Uj_Hobbi_TextBox.Location = new System.Drawing.Point(199, 140);
+            this.Uj_Hobbi_TextBox.Name = "Uj_Hobbi_TextBox";
+            this.Uj_Hobbi_TextBox.Size = new System.Drawing.Size(120, 20);
+            this.Uj_Hobbi_TextBox.TabIndex = 10;
             // 
             // Hozzaad_Button
             // 
@@ -171,22 +161,43 @@
             this.Ment_Button.Text = "Mentés";
             this.Ment_Button.UseVisualStyleBackColor = true;
             // 
+            // saveFileDialog
+            // 
+            this.saveFileDialog.Filter = "szöveges dukumentum|*.txt|minden file|*.*";
+            // 
+            // openFileDialog
+            // 
+            this.openFileDialog.FileName = "openFileDialog1";
+            this.openFileDialog.Filter = "szöveges dukumentum|*.txt|minden file|*.*";
+            // 
+            // Hobbik_ListBox
+            // 
+            this.Hobbik_ListBox.FormattingEnabled = true;
+            this.Hobbik_ListBox.Items.AddRange(new object[] {
+            "Uszás",
+            "Horgászat",
+            "Futás"});
+            this.Hobbik_ListBox.Location = new System.Drawing.Point(199, 29);
+            this.Hobbik_ListBox.Name = "Hobbik_ListBox";
+            this.Hobbik_ListBox.Size = new System.Drawing.Size(120, 95);
+            this.Hobbik_ListBox.TabIndex = 14;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(331, 252);
+            this.Controls.Add(this.Hobbik_ListBox);
             this.Controls.Add(this.Ment_Button);
             this.Controls.Add(this.Betolt_Button);
             this.Controls.Add(this.Hozzaad_Button);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.Uj_Hobbi_TextBox);
             this.Controls.Add(this.Uj_Hobbi_Label);
             this.Controls.Add(this.Kedvenc_Hobbi_Label);
-            this.Controls.Add(this.listBox1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.radioButton2);
-            this.Controls.Add(this.radioButton1);
+            this.Controls.Add(this.Nev_TextBox);
+            this.Controls.Add(this.Szul_Cim_TextBox);
+            this.Controls.Add(this.No_RadioButton);
+            this.Controls.Add(this.Ferfi_RadioButton);
             this.Controls.Add(this.Nem_Label);
             this.Controls.Add(this.Szul_Cim_Label);
             this.Controls.Add(this.Nev_Label);
@@ -202,17 +213,19 @@
         private System.Windows.Forms.Label Nev_Label;
         private System.Windows.Forms.Label Szul_Cim_Label;
         private System.Windows.Forms.Label Nem_Label;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.RadioButton Ferfi_RadioButton;
+        private System.Windows.Forms.RadioButton No_RadioButton;
+        private System.Windows.Forms.TextBox Szul_Cim_TextBox;
+        private System.Windows.Forms.TextBox Nev_TextBox;
         private System.Windows.Forms.Label Kedvenc_Hobbi_Label;
         private System.Windows.Forms.Label Uj_Hobbi_Label;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox Uj_Hobbi_TextBox;
         private System.Windows.Forms.Button Hozzaad_Button;
         private System.Windows.Forms.Button Betolt_Button;
         private System.Windows.Forms.Button Ment_Button;
+        private System.Windows.Forms.SaveFileDialog saveFileDialog;
+        private System.Windows.Forms.OpenFileDialog openFileDialog;
+        private System.Windows.Forms.ListBox Hobbik_ListBox;
     }
 }
 
