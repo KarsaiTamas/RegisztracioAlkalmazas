@@ -33,7 +33,6 @@
             this.Nem_Label = new System.Windows.Forms.Label();
             this.Ferfi_RadioButton = new System.Windows.Forms.RadioButton();
             this.No_RadioButton = new System.Windows.Forms.RadioButton();
-            this.Szul_Cim_TextBox = new System.Windows.Forms.TextBox();
             this.Nev_TextBox = new System.Windows.Forms.TextBox();
             this.Kedvenc_Hobbi_Label = new System.Windows.Forms.Label();
             this.Uj_Hobbi_Label = new System.Windows.Forms.Label();
@@ -44,6 +43,7 @@
             this.saveFileDialog = new System.Windows.Forms.SaveFileDialog();
             this.openFileDialog = new System.Windows.Forms.OpenFileDialog();
             this.Hobbik_ListBox = new System.Windows.Forms.ListBox();
+            this.Szul_DateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.SuspendLayout();
             // 
             // Nev_Label
@@ -94,13 +94,6 @@
             this.No_RadioButton.TabStop = true;
             this.No_RadioButton.Text = "N";
             this.No_RadioButton.UseVisualStyleBackColor = true;
-            // 
-            // Szul_Cim_TextBox
-            // 
-            this.Szul_Cim_TextBox.Location = new System.Drawing.Point(94, 38);
-            this.Szul_Cim_TextBox.Name = "Szul_Cim_TextBox";
-            this.Szul_Cim_TextBox.Size = new System.Drawing.Size(100, 20);
-            this.Szul_Cim_TextBox.TabIndex = 5;
             // 
             // Nev_TextBox
             // 
@@ -167,7 +160,7 @@
             // 
             // openFileDialog
             // 
-            this.openFileDialog.FileName = "openFileDialog1";
+            this.openFileDialog.FileName = "openFileDialog";
             this.openFileDialog.Filter = "szöveges dukumentum|*.txt|minden file|*.*";
             // 
             // Hobbik_ListBox
@@ -182,11 +175,19 @@
             this.Hobbik_ListBox.Size = new System.Drawing.Size(120, 95);
             this.Hobbik_ListBox.TabIndex = 14;
             // 
+            // Szul_DateTimePicker
+            // 
+            this.Szul_DateTimePicker.Location = new System.Drawing.Point(82, 41);
+            this.Szul_DateTimePicker.Name = "Szul_DateTimePicker";
+            this.Szul_DateTimePicker.Size = new System.Drawing.Size(111, 20);
+            this.Szul_DateTimePicker.TabIndex = 15;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(331, 252);
+            this.Controls.Add(this.Szul_DateTimePicker);
             this.Controls.Add(this.Hobbik_ListBox);
             this.Controls.Add(this.Ment_Button);
             this.Controls.Add(this.Betolt_Button);
@@ -195,7 +196,6 @@
             this.Controls.Add(this.Uj_Hobbi_Label);
             this.Controls.Add(this.Kedvenc_Hobbi_Label);
             this.Controls.Add(this.Nev_TextBox);
-            this.Controls.Add(this.Szul_Cim_TextBox);
             this.Controls.Add(this.No_RadioButton);
             this.Controls.Add(this.Ferfi_RadioButton);
             this.Controls.Add(this.Nem_Label);
@@ -215,7 +215,6 @@
         private System.Windows.Forms.Label Nem_Label;
         private System.Windows.Forms.RadioButton Ferfi_RadioButton;
         private System.Windows.Forms.RadioButton No_RadioButton;
-        private System.Windows.Forms.TextBox Szul_Cim_TextBox;
         private System.Windows.Forms.TextBox Nev_TextBox;
         private System.Windows.Forms.Label Kedvenc_Hobbi_Label;
         private System.Windows.Forms.Label Uj_Hobbi_Label;
@@ -226,6 +225,7 @@
         private System.Windows.Forms.SaveFileDialog saveFileDialog;
         private System.Windows.Forms.OpenFileDialog openFileDialog;
         private System.Windows.Forms.ListBox Hobbik_ListBox;
+        private System.Windows.Forms.DateTimePicker Szul_DateTimePicker;
     }
 }
 
